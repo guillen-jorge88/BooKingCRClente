@@ -1,0 +1,46 @@
+<ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">Datos de Solicitud</h1>
+          <!--<button class="button button-clear button-primary" ng-click="modalBooking.hide()"></button>-->
+          <button class="button button-clear button-primary icon ion-android-close" ng-click="closeBookingConf()"></button>
+        </ion-header-bar>
+        <ion-content class="padding">
+          <ion-list>
+              <onezone-datepicker datepicker-object="onezoneDatepicker">
+                  <button class="button button-block button-outline button-positive show-onezone-datepicker">
+                      <strong>Fecha de Reserva: </strong>
+                      {{onezoneDatepicker.date | date:'dd MMMM yyyy'}}
+                  </button>
+              </onezone-datepicker>
+              <button class="button button-block button-outline button-positive" ng-click="openTimepicker()">
+                  <strong>Hora de Reserva: </strong>
+                  <span ng-if="selectedTime">{{hours}}:{{minutes}} {{mind}}</span>
+                  <!--{{selectedTime.getUTCHours()}}:{{selectedTime.getUTCMinutes()}}-->
+              </button>
+              <label class="item item-input item-select" >
+                  <span class="input-label">Adultos</span>
+                  <select ng-model="formRequestServices.cantAdults">
+                      <option ng-repeat="item in [1,100] | range">{{item}}</option>
+                  </select>
+              </label>
+              <label class="item item-input item-select" >
+                  <span class="input-label">Niños</span>
+                  <select ng-model="formRequestServices.cantChildren">
+                      <option ng-repeat="item in [1,100] | range">{{item}}</option>
+                  </select>
+              </label>
+              <label class="item item-input item-select" >
+                  <span class="input-label">Idioma</span>
+                  <select ng-model="formRequestServices.language">
+                      <option ng-repeat="language in languages">{{language.name}}</option>
+                  </select>
+              </label>
+              <ion-toggle ng-model="formRequestServices.transport" toggle-class="toggle-calm">Transporte</ion-toggle>
+              <label class="item item-input item-floating-label " >
+                  <span class="input-label">Lugar de Recepcion</span>
+                  <input ng-model="formRequestServices.reception" type="text" placeholder="Lugar de Recepcion">
+              </label>
+              <button class="button button-block button-positive" ng-click="goToAuction()" >Buscar</button><!-- ng-disabled="!formRequestServices.date || !formRequestServices.time || !formRequestServices.cantAdults || !formRequestServices.cantChildren || !formRequestServices.language || !formRequestServices.transport || !formRequestServices.reception" -->
+          </ion-list>
+        </ion-content>
+      </ion-modal-view>

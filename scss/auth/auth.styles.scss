@@ -1,0 +1,107 @@
+.auth-outer{
+    .welcome-view, .signup-view, .login-view{
+        background:rgba(0,0,0,0.5);
+        color: #fff;
+        
+    }
+    .welcome-view{
+        .top-content{
+            margin-top: 30%;
+            .app-copy{
+                .app-logo{
+                    color: #fff;
+                    /*font-family: 'Lobster', cursive;*/
+                    font-family: 'Lobster', cursive;
+                    font-size: 41pt;
+                    font-weight: 400;
+                }
+            }
+        }
+        
+        .bottom-content{
+            margin-top: 20%;
+            .col-bottom{
+                button{
+                    color: #fff;
+                    border-radius: 1px;
+                }
+                .google-sign-in{
+                    background: $google;
+                }
+                .facebook-sign-in{
+                    background: $facebook;
+                }
+                .split-actions{
+                    button{
+                        border: 1px solid #fff;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    .signup-view{
+        .signup-view-navigation{
+            background-color: transparent;
+            
+            .button-back{
+                color: #fff;
+                font-size: 20pt;
+            }
+        }
+        
+        button{
+            color: #fff;
+        }
+        
+        .signup-list{
+            .list-inset{
+                background:rgba(255,255,255,1);
+                margin-left: 5%;
+                margin-right: 5%;
+                padding-left: 2%;                
+                padding-right: 2%;                
+                .signup-item, .item-input{
+                    background:rgba(255,255,255,1);
+                    border-right: none;
+                    border-left: none;
+                    .input-label{
+                        color: #b0b0b0;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .login-view{
+        .login-view-navigation{
+            background-color: transparent;
+            
+            .button-back{
+                color: #fff;
+                font-size: 20pt;
+            }
+        }
+        
+        button{
+            color: #fff;
+        }
+        
+        .login-list{
+            
+            .list-inset{
+                background:rgba(255,255,255,1);
+                margin-left: 5%;
+                margin-right: 5%;
+                padding-left: 2%;                
+                padding-right: 2%;                
+                .item-input{
+                    background:rgba(255,255,255,1);
+                    border-right: none;
+                    border-left: none;
+                }
+            }
+        }
+    }
+}

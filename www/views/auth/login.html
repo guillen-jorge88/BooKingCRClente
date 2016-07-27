@@ -1,0 +1,33 @@
+<ion-view class="login-view" cache-view="false">
+    <ion-nav-bar class="login-view-navigation">
+        <ion-nav-back-button class="button-clear button-back">
+            <i class="ion-arrow-left-c"></i>
+        </ion-nav-back-button>
+        <ion-nav-title>
+            <span>iniciar sesión</span>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content class="padding" scroll="false">
+        <div class="row">
+            <div class="col">
+                <button class="button button-clear button-right" ui-sref="auth.signup">
+                    Regístrate
+                </button>
+            </div>
+        </div>
+        <ion-list type="list-inset" class="login-list">
+            
+            <label class="item item-input">
+                <input type="email" placeholder="Email" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Contraseña" ng-model="user.password">
+            </label>
+        </ion-list>
+        <div class="row padding">
+            <div class="col padding">
+                <button class="button button-block button-calm" ng-disabled="!user.email && !user.password" ng-click="login()" ><b>Ingresar</b></button><!-- ui-sref="app.services" -->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

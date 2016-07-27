@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/er-gocho/Escritorio/projects/ionic/BooKingCRClente/www/lib/angular-animate/angular-animate.min.js",
+        "/home/er-gocho/Escritorio/projects/ionic/BooKingCRClente/plugins/org.pbernasconi.progressindicator/demo/plugins/org.pbernasconi.progressIndicator/demo/plugins/org.pbernasconi.progressIndicator/demo/plugins/org.pbernasconi.progressIndicator/demo/platforms/ios/build/emulator/demo.app/www/lib/ionic/js/ionic.bundle.min.js"
+    ]
+}

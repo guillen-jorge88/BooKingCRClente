@@ -1,0 +1,34 @@
+{
+  "name": "ng-range-filter",
+  "main": "index.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Zertz/ng-range-filter",
+  "authors": [
+    "Pier-Luc Gendreau"
+  ],
+  "description": "AngularJS filter to generate a range of numeric values",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "filter",
+    "range",
+    "repeat"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "test"
+  ],
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "7aaf4043172417f4b9a9344fe7d7035775d20fce"
+  },
+  "_source": "https://github.com/Zertz/ng-range-filter.git",
+  "_target": "^0.1.0",
+  "_originalSource": "ng-range-filter",
+  "_direct": true
+}

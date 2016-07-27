@@ -1,0 +1,31 @@
+<ion-view class="auction-view" view-title="Subasta">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar" ng-repeat="item in auctionList track by $index">
+                <img ng-src="{{item.proveedor.picture}}" alt="">
+                <h2>{{item.servicio.name}}</h2>
+                <p>
+                    {{item.servicio.descripcion}}
+                    <br>
+                    <span class="">
+                        <a href="#" class="subdued"><i class="icon ion-star"></i></a>
+                        <a href="#" class="subdued"><i class="icon ion-location"></i></a>
+                    </span>
+                    <button class="button button-small button-positive text-rigth"><strong>Contctar</strong></button>
+                </p>
+            </ion-item>
+            <!--<ion-item class="item-avatar">
+                <img src="" alt="">
+                <h2>Venkman</h2>
+                <p>
+                    Nine Inch Nails
+                    <span class="text-rigth">
+                        <a href="#" class="subdued"><i class="icon ion-ios-heart"></i></a>
+                        <a href="#" class="subdued"><i class="icon ion-android-pin"></i></a>
+                    </span>
+                </p>
+            </ion-item>-->
+        </ion-list>
+    </ion-content>
+</ion-view>
+

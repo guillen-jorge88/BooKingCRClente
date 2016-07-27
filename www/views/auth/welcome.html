@@ -1,0 +1,31 @@
+<ion-view class="welcome-view" cache-view="false">
+  <ion-content scroll="false">
+    <div class="top-content row">
+      <div class="app-copy col col-center text-center">
+        <h1 class="app-logo">Subasta</h1>
+      </div>
+    </div>
+    <div class="bottom-content row">
+      <div class="col col-bottom">
+        <button class="google-sign-in button button-block icon-left ion-social-google" ng-click="googleSignIn()">
+          <span class="btn-copy">Google</span>
+        </button>
+        <button class="facebook-sign-in button button-block icon-left ion-social-facebook" ng-click="facebookSignIn()">
+          <span class="btn-copy">Facebook</span>
+        </button>
+        <div class="row split-actions">
+          <div class="col">
+            <button class="button button-block button-outline" ui-sref="auth.signup"><!-- ng-click="goSignup()" -->
+              Regístrate
+            </button>
+          </div>
+          <div class="col">
+            <button class="button button-block button-outline" ui-sref="auth.login">
+              Iniciar Sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

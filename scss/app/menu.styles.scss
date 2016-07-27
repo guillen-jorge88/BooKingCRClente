@@ -1,0 +1,75 @@
+.menu-view{
+    .app-bar{
+        background-color: #356C88;
+        border: none;
+        *{
+            color: #fff !important;
+            font-weight: lighter;
+            font-family: 'Lobster', cursive;
+        }
+    }
+    
+    .bar.bar-profile {
+        background-color: #444;
+        height: 170px;
+        
+        .profile {
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 0;
+            overflow: hidden;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            padding-top: 15px;
+        }
+        .user-name {
+            color: #fff;
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
+            font-size: 12pt;
+            font-weight: lighter;
+            font-family: 'Lobster', cursive;
+        }
+        
+        .profile-picture {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+        }
+        
+        .badge-camera{
+            color: #fff;
+            margin-left: -25px;
+            z-index: 9;
+            font-size: 12pt;
+            padding: 5px 8px;
+            text-align: center;
+            border-radius: 50%;
+            background: #356C88;
+            border: 1px solid #fff;
+        }
+        
+    } 
+
+    
+
+    .menu .has-header
+    {
+        top: 169px;
+    }
+    
+    .list-menu{
+        *{
+            font-family: 'Lobster', cursive;
+        }
+        .item{
+            border: none;
+            .item-content{
+                /*visibility: hidden;*/
+            }
+        }
+    }
+}

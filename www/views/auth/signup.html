@@ -1,0 +1,58 @@
+<ion-view class="signup-view" cache-view="false">
+    <ion-nav-bar class="signup-view-navigation">
+        <ion-nav-back-button class="button-clear button-back">
+            <i class="ion-arrow-left-c"></i>
+        </ion-nav-back-button>
+        <ion-nav-title>
+            <span>Regístrate</span>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content class="padding" scroll="true">
+        <div class="row">
+            <div class="col">
+                <button class="button button-clear button-right" ui-sref="auth.login">
+                    Iniciar Sesión
+                </button>
+            </div>
+        </div>
+        <ion-list type="list-inset" class="signup-list">
+            <label class="item item-input">
+                <input type="text" placeholder="Nombre" ng-model="signup.firstname">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Apellido" ng-model="signup.lastname">
+            </label>
+            <label class="item item-input">
+                <input type="email" placeholder="Email" ng-model="signup.email">
+            </label>
+            <label class="item item-input">
+                <input type="tel" placeholder="Móvil" ng-model="signup.phone">
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label" placeholder="Idioma Nativo">
+                    Idioma
+                </div>
+                <select ng-model="signup.language">
+                    <option ng-repeat="language in languages">{{language.name}}</option>
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label" placeholder="País de Origen">
+                    País
+                </div>
+                <select ng-model="signup.country">
+                    <option ng-repeat="country in countries">{{country.country_name}}</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Contraseña" ng-model="signup.password">
+            </label>            
+            <!----Foto---->
+        </ion-list>
+        <div class="row padding">
+            <div class="col padding">
+                <button class="button button-block button-calm" ng-click="postSignup()" ng-disabled="!signup.firstname || !signup.lastname || !signup.email || !signup.phone || !signup.language || !signup.country || !signup.password"><b>Registro</b></button><!--  -->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view class="services-view" view-title="Subasta" cache-view="false">
+    <ion-content scroll="true">
+        <ion-list>
+            <ion-item class="service-item" ng-repeat="item in categories track by $index" ui-sref="app.subcategorieslist({categoryId:item.id_categoria})"><!--  -->
+                <div back-img="data:image/png;base64,{{item.picture}}">
+                    <h1>{{item.name}}</h1>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,51 @@
+<ion-view class="setting-view" view-title="Subasta">
+    <ion-content>
+        <!--<h1 class="text-center">Ajustes</h1>-->
+        <!--<div class="profile item-text-wrap text-center">
+            <img class="profile-picture" src="data:image/png;base64,{{loginData.picture}}" />
+            <span class="badge-camera" ng-click="uploadAvatar()"><i class="icon ion-camera"></i></span>
+            <h3 class="user-name"> {{loginData.firstname}} {{loginData.lastname}} </h3>
+        </div>-->
+        <ion-list class="setting-list"><!--  type="list-inset" -->
+            <ion-item class="item-divider text-center">
+                Ajustes
+            </ion-item>
+            <label class="item item-input">
+                <input type="text" placeholder="Nombre" ng-model="setting.firstname">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Apellido" ng-model="setting.lastname">
+            </label>
+            <!--<label class="item item-input">
+                <input type="email" placeholder="Email" ng-model="setting.email">
+            </label>-->
+            <label class="item item-input">
+                <input type="tel" placeholder="Móvil" ng-model="setting.phone">
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label" placeholder="Idioma Nativo">
+                    Idioma
+                </div>
+                <select ng-model="setting.language">
+                    <option ng-repeat="language in languages">{{language.name}}</option>
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label" placeholder="País de Origen">
+                    País
+                </div>
+                <select ng-model="setting.country">
+                    <option ng-repeat="country in countries">{{country.country_name}}</option>
+                </select>
+            </label>
+            <!--<label class="item item-input">
+                <input type="password" placeholder="Contraseña" ng-model="setting.password">
+            </label>-->
+        </ion-list>
+        <div class="row padding">
+            <div class="col padding">
+                <button class="button button-block button-positive" ng-click="postSetting()" ng-disabled="!setting.firstname || !setting.lastname || !setting.phone || !setting.language || !setting.country"><b>Actualizar</b></button><!--  -->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
